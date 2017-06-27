@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		507C19827C0883A1AE621826 /* Pods_WehkampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA562588C61D53A42DD59697 /* Pods_WehkampTests.framework */; };
+		D2062F8F1F011EC80020B4F8 /* HorizontalQuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2062F8E1F011EC80020B4F8 /* HorizontalQuantityView.swift */; };
+		D2062F911F011ED00020B4F8 /* HorizontalQuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2062F901F011ED00020B4F8 /* HorizontalQuantityView.xib */; };
+		D20CFFE41EF8383400A568DD /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CFFE31EF8383400A568DD /* LoginHandler.swift */; };
+		D20CFFE71EF838D200A568DD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CFFE61EF838D200A568DD /* LoginViewModel.swift */; };
+		D2129A4D1EFAAD8800FF8373 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A4C1EFAAD8800FF8373 /* ProductListViewController.swift */; };
+		D2129A501EFAB24500FF8373 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A4F1EFAB24500FF8373 /* ProductCollectionViewCell.swift */; };
+		D2129A5A1EFBDBA300FF8373 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A591EFBDBA300FF8373 /* Formatter.swift */; };
+		D2129A5C1EFBE98700FF8373 /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A5B1EFBE98700FF8373 /* QuantityView.swift */; };
+		D2129A5E1EFBE9DF00FF8373 /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2129A5D1EFBE9DF00FF8373 /* QuantityView.xib */; };
+		D2129A601EFBEED100FF8373 /* UINib+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A5F1EFBEED100FF8373 /* UINib+Additions.swift */; };
+		D2129A641EFCF4CE00FF8373 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A631EFCF3ED00FF8373 /* UIColor+Additions.swift */; };
+		D2129A661EFCF6D200FF8373 /* WHKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A651EFCF6D200FF8373 /* WHKLabel.swift */; };
+		D2129A681EFD344100FF8373 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A671EFD344100FF8373 /* BasketViewController.swift */; };
+		D2129A6A1EFD405A00FF8373 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2129A691EFD405A00FF8373 /* TabBarController.swift */; };
+		D230FE251F0238D00050DC1A /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE241F0238B60050DC1A /* Dynamic.swift */; };
+		D230FE271F0238D60050DC1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE1C1F0238710050DC1A /* Constants.swift */; };
+		D230FE281F0238DA0050DC1A /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE1D1F02387E0050DC1A /* String+Additions.swift */; };
+		D230FE291F0238DD0050DC1A /* ThreadingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE1F1F02387E0050DC1A /* ThreadingHelper.swift */; };
+		D230FE2A1F0238DF0050DC1A /* UIAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE1E1F02387E0050DC1A /* UIAlertHelper.swift */; };
+		D230FE2B1F0238E20050DC1A /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE201F0238810050DC1A /* UIHelper.swift */; };
+		D230FE2D1F0238E90050DC1A /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = D230FE231F02389E0050DC1A /* products.json */; };
+		D230FE2E1F0238EB0050DC1A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230FE221F02389E0050DC1A /* RequestManager.swift */; };
+		D230FE321F0239D70050DC1A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D230FE2F1F0239D40050DC1A /* OpenSans-Light.ttf */; };
+		D230FE331F0239D80050DC1A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D230FE311F0239D40050DC1A /* OpenSans-Regular.ttf */; };
+		D230FE341F0239DA0050DC1A /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D230FE301F0239D40050DC1A /* OpenSans-Semibold.ttf */; };
+		D24AA9D31EFFE07D008B8914 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24AA9D21EFFE07D008B8914 /* LoadingViewController.swift */; };
+		D24AA9D51EFFE736008B8914 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24AA9D41EFFE736008B8914 /* BasketTableViewCell.swift */; };
+		D24AA9D71EFFE779008B8914 /* BasketTotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24AA9D61EFFE779008B8914 /* BasketTotalTableViewCell.swift */; };
+		D24AA9D91EFFE8A0008B8914 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24AA9D81EFFE8A0008B8914 /* BasketViewModel.swift */; };
+		D24EA7351EF94D4E005065F5 /* BasketResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA7341EF94D4E005065F5 /* BasketResponseModel.swift */; };
+		D24EA7371EF94E78005065F5 /* BasketItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA7361EF94E78005065F5 /* BasketItemModel.swift */; };
+		D24EA7391EF94E9F005065F5 /* SizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA7381EF94E9F005065F5 /* SizeModel.swift */; };
+		D24EA73B1EF94F09005065F5 /* DiscountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA73A1EF94F09005065F5 /* DiscountModel.swift */; };
+		D24EA73F1EF95004005065F5 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA73E1EF95004005065F5 /* ProductModel.swift */; };
+		D24EA7411EF95084005065F5 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA7401EF95084005065F5 /* ProductViewModel.swift */; };
+		D261023E1EF9262300DCE01C /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261023D1EF9262300DCE01C /* BaseNavigationViewController.swift */; };
+		D26102481EF9298600DCE01C /* SingletonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26102471EF9298600DCE01C /* SingletonObject.swift */; };
+		D2A1C5681EF94013009CBA3F /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1C5671EF94013009CBA3F /* LoginResponseModel.swift */; };
+		D2A1C56A1EF94474009CBA3F /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1C5691EF94474009CBA3F /* Dictionary+Extension.swift */; };
+		D2C901EA1EF7FD7200E6A332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C901E91EF7FD7200E6A332 /* AppDelegate.swift */; };
+		D2C901EF1EF7FD7200E6A332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C901ED1EF7FD7200E6A332 /* Main.storyboard */; };
+		D2C901F11EF7FD7200E6A332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C901F01EF7FD7200E6A332 /* Assets.xcassets */; };
+		D2C901F41EF7FD7200E6A332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C901F21EF7FD7200E6A332 /* LaunchScreen.storyboard */; };
+		D2C901FF1EF7FD7200E6A332 /* WehkampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C901FE1EF7FD7200E6A332 /* WehkampTests.swift */; };
+		D2C9020E1EF7FDB900E6A332 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9020C1EF7FDB900E6A332 /* LoginViewController.swift */; };
+		D2E82BE21EF92F6600556CC1 /* BasketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E82BE11EF92F6600556CC1 /* BasketHandler.swift */; };
+		FE52B63407B486DCC2C98595 /* Pods_Wehkamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07284BC807F202A236B819D /* Pods_Wehkamp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2C901FB1EF7FD7200E6A332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C901DE1EF7FD7200E6A332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C901E51EF7FD7200E6A332;
+			remoteInfo = Wehkamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD61B335764A2FA42CEF9F3 /* Pods-WehkampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WehkampTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WehkampTests/Pods-WehkampTests.release.xcconfig"; sourceTree = "<group>"; };
+		68FB9F3B610058F458829FFE /* Pods-Wehkamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wehkamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wehkamp/Pods-Wehkamp.debug.xcconfig"; sourceTree = "<group>"; };
+		C07284BC807F202A236B819D /* Pods_Wehkamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wehkamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85D4DBAFF9AF7F2C1CA70A1 /* Pods-WehkampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WehkampTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WehkampTests/Pods-WehkampTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2062F8E1F011EC80020B4F8 /* HorizontalQuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalQuantityView.swift; sourceTree = "<group>"; };
+		D2062F901F011ED00020B4F8 /* HorizontalQuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalQuantityView.xib; sourceTree = "<group>"; };
+		D20CFFE31EF8383400A568DD /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		D20CFFE61EF838D200A568DD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D2129A4C1EFAAD8800FF8373 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		D2129A4F1EFAB24500FF8373 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2129A591EFBDBA300FF8373 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		D2129A5B1EFBE98700FF8373 /* QuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
+		D2129A5D1EFBE9DF00FF8373 /* QuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
+		D2129A5F1EFBEED100FF8373 /* UINib+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Additions.swift"; sourceTree = "<group>"; };
+		D2129A631EFCF3ED00FF8373 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		D2129A651EFCF6D200FF8373 /* WHKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WHKLabel.swift; sourceTree = "<group>"; };
+		D2129A671EFD344100FF8373 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		D2129A691EFD405A00FF8373 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D230FE1C1F0238710050DC1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D230FE1D1F02387E0050DC1A /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		D230FE1E1F02387E0050DC1A /* UIAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertHelper.swift; sourceTree = "<group>"; };
+		D230FE1F1F02387E0050DC1A /* ThreadingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadingHelper.swift; sourceTree = "<group>"; };
+		D230FE201F0238810050DC1A /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		D230FE221F02389E0050DC1A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		D230FE231F02389E0050DC1A /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		D230FE241F0238B60050DC1A /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		D230FE2F1F0239D40050DC1A /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		D230FE301F0239D40050DC1A /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		D230FE311F0239D40050DC1A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		D24AA9D21EFFE07D008B8914 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D24AA9D41EFFE736008B8914 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		D24AA9D61EFFE779008B8914 /* BasketTotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTotalTableViewCell.swift; sourceTree = "<group>"; };
+		D24AA9D81EFFE8A0008B8914 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		D24EA7341EF94D4E005065F5 /* BasketResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketResponseModel.swift; sourceTree = "<group>"; };
+		D24EA7361EF94E78005065F5 /* BasketItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketItemModel.swift; sourceTree = "<group>"; };
+		D24EA7381EF94E9F005065F5 /* SizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeModel.swift; sourceTree = "<group>"; };
+		D24EA73A1EF94F09005065F5 /* DiscountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountModel.swift; sourceTree = "<group>"; };
+		D24EA73E1EF95004005065F5 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		D24EA7401EF95084005065F5 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		D261023D1EF9262300DCE01C /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		D26102471EF9298600DCE01C /* SingletonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonObject.swift; sourceTree = "<group>"; };
+		D2A1C5671EF94013009CBA3F /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		D2A1C5691EF94474009CBA3F /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		D2C901E61EF7FD7200E6A332 /* Wehkamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wehkamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C901E91EF7FD7200E6A332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2C901EE1EF7FD7200E6A332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2C901F01EF7FD7200E6A332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2C901F31EF7FD7200E6A332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2C901F51EF7FD7200E6A332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C901FA1EF7FD7200E6A332 /* WehkampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WehkampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C901FE1EF7FD7200E6A332 /* WehkampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WehkampTests.swift; sourceTree = "<group>"; };
+		D2C902001EF7FD7200E6A332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C9020C1EF7FDB900E6A332 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2E82BE11EF92F6600556CC1 /* BasketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketHandler.swift; sourceTree = "<group>"; };
+		EDDED54249C777B1DCD4AC62 /* Pods-Wehkamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wehkamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wehkamp/Pods-Wehkamp.release.xcconfig"; sourceTree = "<group>"; };
+		FA562588C61D53A42DD59697 /* Pods_WehkampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WehkampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2C901E31EF7FD7200E6A332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE52B63407B486DCC2C98595 /* Pods_Wehkamp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C901F71EF7FD7200E6A332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507C19827C0883A1AE621826 /* Pods_WehkampTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174DDF0A82B1E83C03D9C445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68FB9F3B610058F458829FFE /* Pods-Wehkamp.debug.xcconfig */,
+				EDDED54249C777B1DCD4AC62 /* Pods-Wehkamp.release.xcconfig */,
+				C85D4DBAFF9AF7F2C1CA70A1 /* Pods-WehkampTests.debug.xcconfig */,
+				0DD61B335764A2FA42CEF9F3 /* Pods-WehkampTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		670B30A51EE1CCD5C6AB6CCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07284BC807F202A236B819D /* Pods_Wehkamp.framework */,
+				FA562588C61D53A42DD59697 /* Pods_WehkampTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D20CFFD01EF8001F00A568DD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D230FE1C1F0238710050DC1A /* Constants.swift */,
+				D2A1C5691EF94474009CBA3F /* Dictionary+Extension.swift */,
+				D26102471EF9298600DCE01C /* SingletonObject.swift */,
+				D230FE1D1F02387E0050DC1A /* String+Additions.swift */,
+				D230FE1F1F02387E0050DC1A /* ThreadingHelper.swift */,
+				D230FE1E1F02387E0050DC1A /* UIAlertHelper.swift */,
+				D2129A631EFCF3ED00FF8373 /* UIColor+Additions.swift */,
+				D230FE201F0238810050DC1A /* UIHelper.swift */,
+				D2129A5F1EFBEED100FF8373 /* UINib+Additions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D20CFFE51EF838C500A568DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D230FE241F0238B60050DC1A /* Dynamic.swift */,
+				D24AA9D81EFFE8A0008B8914 /* BasketViewModel.swift */,
+				D2129A591EFBDBA300FF8373 /* Formatter.swift */,
+				D20CFFE61EF838D200A568DD /* LoginViewModel.swift */,
+				D24EA7401EF95084005065F5 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2129A4E1EFAB23300FF8373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D24AA9D41EFFE736008B8914 /* BasketTableViewCell.swift */,
+				D24AA9D61EFFE779008B8914 /* BasketTotalTableViewCell.swift */,
+				D2129A4F1EFAB24500FF8373 /* ProductCollectionViewCell.swift */,
+				D2129A5B1EFBE98700FF8373 /* QuantityView.swift */,
+				D2129A5D1EFBE9DF00FF8373 /* QuantityView.xib */,
+				D2129A651EFCF6D200FF8373 /* WHKLabel.swift */,
+				D2062F8E1F011EC80020B4F8 /* HorizontalQuantityView.swift */,
+				D2062F901F011ED00020B4F8 /* HorizontalQuantityView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D261023F1EF9265400DCE01C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D26102401EF9265D00DCE01C /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D26102401EF9265D00DCE01C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D230FE2F1F0239D40050DC1A /* OpenSans-Light.ttf */,
+				D230FE311F0239D40050DC1A /* OpenSans-Regular.ttf */,
+				D230FE301F0239D40050DC1A /* OpenSans-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D2C901DD1EF7FD7200E6A332 = {
+			isa = PBXGroup;
+			children = (
+				D2C901E81EF7FD7200E6A332 /* Wehkamp */,
+				D2C901FD1EF7FD7200E6A332 /* WehkampTests */,
+				D2C901E71EF7FD7200E6A332 /* Products */,
+				174DDF0A82B1E83C03D9C445 /* Pods */,
+				670B30A51EE1CCD5C6AB6CCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C901E71EF7FD7200E6A332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C901E61EF7FD7200E6A332 /* Wehkamp.app */,
+				D2C901FA1EF7FD7200E6A332 /* WehkampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C901E81EF7FD7200E6A332 /* Wehkamp */ = {
+			isa = PBXGroup;
+			children = (
+				D2129A4E1EFAB23300FF8373 /* View */,
+				D2C901E91EF7FD7200E6A332 /* AppDelegate.swift */,
+				D2C901F01EF7FD7200E6A332 /* Assets.xcassets */,
+				D2C9020B1EF7FDA700E6A332 /* Data */,
+				D2C901F51EF7FD7200E6A332 /* Info.plist */,
+				D2C901F21EF7FD7200E6A332 /* LaunchScreen.storyboard */,
+				D2C901ED1EF7FD7200E6A332 /* Main.storyboard */,
+				D2C9020A1EF7FDA700E6A332 /* Model */,
+				D261023F1EF9265400DCE01C /* Resources */,
+				D20CFFD01EF8001F00A568DD /* Utility */,
+				D2C902091EF7FDA700E6A332 /* ViewController */,
+				D20CFFE51EF838C500A568DD /* ViewModel */,
+			);
+			path = Wehkamp;
+			sourceTree = "<group>";
+		};
+		D2C901FD1EF7FD7200E6A332 /* WehkampTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2C901FE1EF7FD7200E6A332 /* WehkampTests.swift */,
+				D2C902001EF7FD7200E6A332 /* Info.plist */,
+			);
+			path = WehkampTests;
+			sourceTree = "<group>";
+		};
+		D2C902091EF7FDA700E6A332 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D261023D1EF9262300DCE01C /* BaseNavigationViewController.swift */,
+				D2129A671EFD344100FF8373 /* BasketViewController.swift */,
+				D24AA9D21EFFE07D008B8914 /* LoadingViewController.swift */,
+				D2C9020C1EF7FDB900E6A332 /* LoginViewController.swift */,
+				D2129A4C1EFAAD8800FF8373 /* ProductListViewController.swift */,
+				D2129A691EFD405A00FF8373 /* TabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D2C9020A1EF7FDA700E6A332 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D24EA7361EF94E78005065F5 /* BasketItemModel.swift */,
+				D24EA7341EF94D4E005065F5 /* BasketResponseModel.swift */,
+				D24EA73A1EF94F09005065F5 /* DiscountModel.swift */,
+				D2A1C5671EF94013009CBA3F /* LoginResponseModel.swift */,
+				D24EA73E1EF95004005065F5 /* ProductModel.swift */,
+				D24EA7381EF94E9F005065F5 /* SizeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2C9020B1EF7FDA700E6A332 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D2E82BE11EF92F6600556CC1 /* BasketHandler.swift */,
+				D20CFFE31EF8383400A568DD /* LoginHandler.swift */,
+				D230FE231F02389E0050DC1A /* products.json */,
+				D230FE221F02389E0050DC1A /* RequestManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2C901E51EF7FD7200E6A332 /* Wehkamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C902031EF7FD7200E6A332 /* Build configuration list for PBXNativeTarget "Wehkamp" */;
+			buildPhases = (
+				7A45E83A90DBCF23B953FBDE /* [CP] Check Pods Manifest.lock */,
+				D2C901E21EF7FD7200E6A332 /* Sources */,
+				D2C901E31EF7FD7200E6A332 /* Frameworks */,
+				D2C901E41EF7FD7200E6A332 /* Resources */,
+				0326BD6B3FF58F796F3CA22E /* [CP] Embed Pods Frameworks */,
+				13F04A90BE50CDA416734819 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wehkamp;
+			productName = Wehkamp;
+			productReference = D2C901E61EF7FD7200E6A332 /* Wehkamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2C901F91EF7FD7200E6A332 /* WehkampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C902061EF7FD7200E6A332 /* Build configuration list for PBXNativeTarget "WehkampTests" */;
+			buildPhases = (
+				1FE61D042E5CE3E5C42E379E /* [CP] Check Pods Manifest.lock */,
+				D2C901F61EF7FD7200E6A332 /* Sources */,
+				D2C901F71EF7FD7200E6A332 /* Frameworks */,
+				D2C901F81EF7FD7200E6A332 /* Resources */,
+				3C796D0B90DC41D723A5C22F /* [CP] Embed Pods Frameworks */,
+				0013498828B4C241176475CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C901FC1EF7FD7200E6A332 /* PBXTargetDependency */,
+			);
+			name = WehkampTests;
+			productName = WehkampTests;
+			productReference = D2C901FA1EF7FD7200E6A332 /* WehkampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C901DE1EF7FD7200E6A332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = isonka;
+				TargetAttributes = {
+					D2C901E51EF7FD7200E6A332 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					D2C901F91EF7FD7200E6A332 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = D2C901E51EF7FD7200E6A332;
+					};
+				};
+			};
+			buildConfigurationList = D2C901E11EF7FD7200E6A332 /* Build configuration list for PBXProject "Wehkamp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2C901DD1EF7FD7200E6A332;
+			productRefGroup = D2C901E71EF7FD7200E6A332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2C901E51EF7FD7200E6A332 /* Wehkamp */,
+				D2C901F91EF7FD7200E6A332 /* WehkampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C901E41EF7FD7200E6A332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2062F911F011ED00020B4F8 /* HorizontalQuantityView.xib in Resources */,
+				D230FE2D1F0238E90050DC1A /* products.json in Resources */,
+				D230FE321F0239D70050DC1A /* OpenSans-Light.ttf in Resources */,
+				D230FE341F0239DA0050DC1A /* OpenSans-Semibold.ttf in Resources */,
+				D2129A5E1EFBE9DF00FF8373 /* QuantityView.xib in Resources */,
+				D2C901F41EF7FD7200E6A332 /* LaunchScreen.storyboard in Resources */,
+				D2C901F11EF7FD7200E6A332 /* Assets.xcassets in Resources */,
+				D230FE331F0239D80050DC1A /* OpenSans-Regular.ttf in Resources */,
+				D2C901EF1EF7FD7200E6A332 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C901F81EF7FD7200E6A332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0013498828B4C241176475CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WehkampTests/Pods-WehkampTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0326BD6B3FF58F796F3CA22E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wehkamp/Pods-Wehkamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13F04A90BE50CDA416734819 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wehkamp/Pods-Wehkamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE61D042E5CE3E5C42E379E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C796D0B90DC41D723A5C22F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WehkampTests/Pods-WehkampTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A45E83A90DBCF23B953FBDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2C901E21EF7FD7200E6A332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2129A681EFD344100FF8373 /* BasketViewController.swift in Sources */,
+				D24EA73B1EF94F09005065F5 /* DiscountModel.swift in Sources */,
+				D2129A4D1EFAAD8800FF8373 /* ProductListViewController.swift in Sources */,
+				D2A1C5681EF94013009CBA3F /* LoginResponseModel.swift in Sources */,
+				D2129A5A1EFBDBA300FF8373 /* Formatter.swift in Sources */,
+				D2E82BE21EF92F6600556CC1 /* BasketHandler.swift in Sources */,
+				D2C9020E1EF7FDB900E6A332 /* LoginViewController.swift in Sources */,
+				D230FE271F0238D60050DC1A /* Constants.swift in Sources */,
+				D2A1C56A1EF94474009CBA3F /* Dictionary+Extension.swift in Sources */,
+				D20CFFE41EF8383400A568DD /* LoginHandler.swift in Sources */,
+				D24EA7411EF95084005065F5 /* ProductViewModel.swift in Sources */,
+				D230FE2A1F0238DF0050DC1A /* UIAlertHelper.swift in Sources */,
+				D261023E1EF9262300DCE01C /* BaseNavigationViewController.swift in Sources */,
+				D2129A5C1EFBE98700FF8373 /* QuantityView.swift in Sources */,
+				D2129A501EFAB24500FF8373 /* ProductCollectionViewCell.swift in Sources */,
+				D24AA9D91EFFE8A0008B8914 /* BasketViewModel.swift in Sources */,
+				D24AA9D71EFFE779008B8914 /* BasketTotalTableViewCell.swift in Sources */,
+				D2129A641EFCF4CE00FF8373 /* UIColor+Additions.swift in Sources */,
+				D2129A6A1EFD405A00FF8373 /* TabBarController.swift in Sources */,
+				D24AA9D51EFFE736008B8914 /* BasketTableViewCell.swift in Sources */,
+				D230FE291F0238DD0050DC1A /* ThreadingHelper.swift in Sources */,
+				D24AA9D31EFFE07D008B8914 /* LoadingViewController.swift in Sources */,
+				D230FE2B1F0238E20050DC1A /* UIHelper.swift in Sources */,
+				D230FE2E1F0238EB0050DC1A /* RequestManager.swift in Sources */,
+				D2062F8F1F011EC80020B4F8 /* HorizontalQuantityView.swift in Sources */,
+				D24EA7371EF94E78005065F5 /* BasketItemModel.swift in Sources */,
+				D230FE251F0238D00050DC1A /* Dynamic.swift in Sources */,
+				D2C901EA1EF7FD7200E6A332 /* AppDelegate.swift in Sources */,
+				D2129A601EFBEED100FF8373 /* UINib+Additions.swift in Sources */,
+				D26102481EF9298600DCE01C /* SingletonObject.swift in Sources */,
+				D20CFFE71EF838D200A568DD /* LoginViewModel.swift in Sources */,
+				D24EA7391EF94E9F005065F5 /* SizeModel.swift in Sources */,
+				D2129A661EFCF6D200FF8373 /* WHKLabel.swift in Sources */,
+				D24EA7351EF94D4E005065F5 /* BasketResponseModel.swift in Sources */,
+				D24EA73F1EF95004005065F5 /* ProductModel.swift in Sources */,
+				D230FE281F0238DA0050DC1A /* String+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C901F61EF7FD7200E6A332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C901FF1EF7FD7200E6A332 /* WehkampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2C901FC1EF7FD7200E6A332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C901E51EF7FD7200E6A332 /* Wehkamp */;
+			targetProxy = D2C901FB1EF7FD7200E6A332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2C901ED1EF7FD7200E6A332 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C901EE1EF7FD7200E6A332 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2C901F21EF7FD7200E6A332 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C901F31EF7FD7200E6A332 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2C902011EF7FD7200E6A332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2C902021EF7FD7200E6A332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2C902041EF7FD7200E6A332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FB9F3B610058F458829FFE /* Pods-Wehkamp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2RSN35J68C;
+				INFOPLIST_FILE = Wehkamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garaj.sesplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "178a308a-b453-45ae-a59c-be14a9e0b7ea";
+				PROVISIONING_PROFILE_SPECIFIER = SesPlusDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2C902051EF7FD7200E6A332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDED54249C777B1DCD4AC62 /* Pods-Wehkamp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2RSN35J68C;
+				INFOPLIST_FILE = Wehkamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garaj.sesplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "178a308a-b453-45ae-a59c-be14a9e0b7ea";
+				PROVISIONING_PROFILE_SPECIFIER = SesPlusDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2C902071EF7FD7200E6A332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85D4DBAFF9AF7F2C1CA70A1 /* Pods-WehkampTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WehkampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isonka.WehkampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wehkamp.app/Wehkamp";
+			};
+			name = Debug;
+		};
+		D2C902081EF7FD7200E6A332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD61B335764A2FA42CEF9F3 /* Pods-WehkampTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WehkampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isonka.WehkampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wehkamp.app/Wehkamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2C901E11EF7FD7200E6A332 /* Build configuration list for PBXProject "Wehkamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C902011EF7FD7200E6A332 /* Debug */,
+				D2C902021EF7FD7200E6A332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C902031EF7FD7200E6A332 /* Build configuration list for PBXNativeTarget "Wehkamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C902041EF7FD7200E6A332 /* Debug */,
+				D2C902051EF7FD7200E6A332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C902061EF7FD7200E6A332 /* Build configuration list for PBXNativeTarget "WehkampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C902071EF7FD7200E6A332 /* Debug */,
+				D2C902081EF7FD7200E6A332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C901DE1EF7FD7200E6A332 /* Project object */;
+}

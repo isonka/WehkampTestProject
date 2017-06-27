@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalQuantityView" customModule="Wehkamp" customModuleProvider="target">
+            <connections>
+                <outlet property="minusButton" destination="TLH-Ty-gHe" id="ibw-MA-bLH"/>
+                <outlet property="plusButton" destination="pHf-AD-767" id="TYX-qU-V06"/>
+                <outlet property="quantityLabel" destination="qq8-x0-J6h" id="dDa-7r-8hk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq8-x0-J6h">
+                    <rect key="frame" x="40" y="12" width="60" height="16.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-Ty-gHe">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="lDD-YJ-bAY"/>
+                    </constraints>
+                    <state key="normal" image="minus_icon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="minusTapWithSender:" destination="-1" eventType="touchUpInside" id="yjp-3f-JWV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-AD-767">
+                    <rect key="frame" x="100" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="HOa-ai-qzu"/>
+                    </constraints>
+                    <state key="normal" image="plus_icon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="plusTapWithSender:" destination="-1" eventType="touchUpInside" id="ULW-fN-3OC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pHf-AD-767" secondAttribute="bottom" id="3Zc-sB-2G0"/>
+                <constraint firstItem="qq8-x0-J6h" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BDa-t9-xqQ"/>
+                <constraint firstItem="TLH-Ty-gHe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DcX-DF-23b"/>
+                <constraint firstAttribute="trailing" secondItem="pHf-AD-767" secondAttribute="trailing" id="ETZ-Mf-1Qt"/>
+                <constraint firstItem="qq8-x0-J6h" firstAttribute="leading" secondItem="TLH-Ty-gHe" secondAttribute="trailing" id="PhT-EQ-FTX"/>
+                <constraint firstItem="pHf-AD-767" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XGb-kY-PYR"/>
+                <constraint firstAttribute="bottom" secondItem="TLH-Ty-gHe" secondAttribute="bottom" id="b4S-Ub-edK"/>
+                <constraint firstItem="pHf-AD-767" firstAttribute="leading" secondItem="qq8-x0-J6h" secondAttribute="trailing" id="oSs-mR-peM"/>
+                <constraint firstItem="TLH-Ty-gHe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rTV-L3-5OO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minus_icon" width="25" height="25"/>
+        <image name="plus_icon" width="25" height="25"/>
+    </resources>
+</document>
